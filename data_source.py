@@ -8,6 +8,7 @@ def nasa_data_source():
     if response.status_code == 200:
         data = response.json()
         print(f"Success request: {data}")
+        return data
     else:
         print(f"Failed to fetch data from {url}")
 
@@ -18,6 +19,7 @@ def dog_data_source():
     if response.status_code == 200:
         data = response.json()
         print(f"Success request: {data}")
+        return data
     else:
         print(f"Failed to fetch data from {url}")
 
@@ -30,5 +32,6 @@ def meteo_data_source():
     if response.status_code == 200:
         data = response.json()
         print(f"Success request: {data}")
+        return data
     else:
         print(f"Failed to fetch data from {url}")
