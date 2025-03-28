@@ -14,14 +14,14 @@ def nasa_data_source():
 
 
 def dog_data_source():
-    url = "https://dog.ceo/api/breeds/list/all"
+    url = 'https://dog.ceo/api/breeds/list/all'
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        print(f"Success request: {data}")
+        print(f'Success request: {data}')
         return data
     else:
-        print(f"Failed to fetch data from {url}")
+        print(f'Failed to fetch data from {url}')
 
 
 def meteo_data_source():
